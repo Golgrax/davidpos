@@ -1,5 +1,5 @@
 .gbtn {
-  color: #f0f0f0; /* Light grey text color for better contrast */
+  color: #ffffff; /* White text color for better contrast */
   
   display: flex;
   justify-content: center;
@@ -9,16 +9,16 @@
 
   border-radius: 0.5em;
   
-  padding: 2em 1em;
+  padding: 1.5em 1em; /* Slightly reduced padding for a more compact look */
 
-  box-shadow: 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.247);
+  box-shadow: 0.3em 0.3em 0.2em rgba(0, 0, 0, 0.15); /* Softer shadow for a subtle depth */
 
-  transition: ease 0.2s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for both transform and shadow */
 }
 
 .gbtn:hover {
-  transform: scale(1.05);
-  box-shadow: 0.4em 0.4em 0.2em rgba(0, 0, 0, 0.096), 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.247);
+  transform: translateY(-0.1em); /* Subtle lift effect on hover */
+  box-shadow: 0.4em 0.4em 0.3em rgba(0, 0, 0, 0.1); /* Softer shadow on hover for a gentle effect */
 }
 
 .gbtn {
@@ -28,29 +28,29 @@
 /* button colors and border */
 
 .cblue {
-  background-image: linear-gradient(45deg, #4886c0, #27476e);
-  border: 0.2em solid #262e4a;
+  background-image: linear-gradient(45deg, #6ba8e5, #4178be);
+  border: 0.1em solid #34588b; /* Thinner border for a sleek look */
 }
 
 .cred {
-  background-image: linear-gradient(45deg, #b42844, #99116e);
-  border: 0.2em solid #802d2f;
+  background-image: linear-gradient(45deg, #e57373, #c2185b);
+  border: 0.1em solid #ad1457; /* Thinner border for a sleek look */
 }
 
 .cgreen {
-  background-image: linear-gradient(45deg, #00750a, #03af20);
-  border: 0.2em solid #0e4703;
+  background-image: linear-gradient(45deg, #81c784, #388e3c);
+  border: 0.1em solid #2e7d32; /* Thinner border for a sleek look */
 }
 
 .goback {
-  background-color: #ec2929;
-  border: medium solid #f0f0f0;
-  border-radius: 0.9em;
-  padding: 0.2em;
+  background-color: #f44336; /* Brighter red for the go back button */
+  border: none; /* Removed border for a cleaner look */
+  border-radius: 0.5em; /* Consistent border-radius with other buttons */
+  padding: 1em; /* Uniform padding with other buttons */
   text-align: center;
 }
 
 .goback:hover {
-  transform: scale(1.05);
-  box-shadow: 0.4em 0.4em 0.2em rgba(0, 0, 0, 0.096), 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.247);
+  transform: translateY(-0.1em); /* Subtle lift effect on hover */
+  box-shadow: 0.4em 0.4em 0.3em rgba(0, 0, 0, 0.1); /* Softer shadow on hover for a gentle effect */
 }
