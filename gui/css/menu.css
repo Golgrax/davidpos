@@ -4,12 +4,16 @@
   align-items: center;
   height: 100vh;
   gap: 2em;
+  background-color: #f4f4f4; /* Added a light grey background */
 }
 
 .gbtn {
   width: 29vw;
   height: 40vh;
   max-width: 600px;
+  background-color: #6c757d; /* Added a neutral grey background */
+  color: #fff; /* Text color changed to white for contrast */
+  border: none; /* Removed border for a cleaner look */
 }
 .gbtn > h2 {
   margin: 0.8em 0px;
@@ -18,9 +22,14 @@
 img {
   min-height: 3em;
   height: 30%;
+  border-radius: 8px; /* Added rounded corners for a modern look */
 }
 
 @media (max-width: 800px), (max-height: 600px) {
+  .main {
+    gap: 1em; /* Reduced gap for smaller screens */
+  }
+
   p {
     display: none;
   }
@@ -33,32 +42,27 @@ img {
 
 @media (max-height: 600px) {
   .gbtn {
-    height: 30vh;;
+    height: 30vh;
   }
 }
 
 @media (max-height: 400px) {
-  h2{
+  h2 {
     display: none;
   }
   
   .gbtn {
-    height: 40vh;;
+    height: 40vh;
   }
 }
 
 @media (max-width: 600px) {
-
-  h2{
+  h2 {
     margin: 0;
   }
 
   .main {
-    display:flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 1em;
   }
 
   .gbtn {
