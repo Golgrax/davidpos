@@ -1,34 +1,40 @@
 .options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: #f4f4f4; /* Added a light grey background */
 }
 
 h2 {
-    color: white;
+  color: #333; /* Changed from white to dark grey for better visibility */
+  text-shadow: 1px 1px 2px #fff; /* Added a subtle shadow for depth */
 }
 
 .dates {
-    display: flex;
-    gap: 1em;
-    text-align: center;
+  display: flex;
+  gap: 1em;
+  text-align: center;
+  color: #555; /* Added a mid-tone grey color */
 }
 
 .report-container {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em; /* Added padding for spacing */
+  background-color: #e8e8e8; /* Added a slightly darker grey background */
 }
 
 .reports {
-    width: clamp(200px,70%,700px);
+  width: clamp(200px, 70%, 700px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a shadow for a lifted effect */
 }
 
 .reports > div {
-    background-color: white;
+  background-color: #ffffff; /* Ensured divs inside reports are white */
+  padding: 1em; /* Added padding for spacing */
+  border-radius: 8px; /* Added rounded corners for a modern look */
 }
-
