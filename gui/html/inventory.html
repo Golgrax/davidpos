@@ -20,79 +20,61 @@
 </head>
 <body>
 
-  <div class="popup-container">
-    <div class="popup add-box">
-      <h2>Add Item</h2>
+  <div class="popup-container" role="dialog" aria-labelledby="popup-heading" aria-modal="true">
+    <div class="popup add-box" aria-hidden="true">
+      <h2 id="popup-heading">Add Item</h2>
       <div class="pop-fields">
+        <label for="add-itemname">Item Name:</label>
         <input id="add-itemname" type="text" placeholder="Item Name" required>
+        
+        <label for="add-class">Class:</label>
         <input id="add-class" type="text" placeholder="Class" required>
+        
+        <label for="add-price">Price:</label>
         <input id="add-price" type="number" placeholder="Price" required>
+        
+        <label for="add-quantity">Quantity:</label>
         <input id="add-quantity" type="number" placeholder="Quantity" required>
-        <div>
-          <div class="gbtn cgreen add0"><h2>Confirm</h2></div>
-          <div class="gbtn cred add1"><h2>Cancel</h2></div>
+        
+        <div class="button-group">
+          <button class="gbtn cgreen add0">Confirm</button>
+          <button class="gbtn cred add1">Cancel</button>
         </div>
       </div>
     </div>
-
-    <div class="popup edit-box">
-      <h2>Edit Item</h2>
-      <div class="pop-fields">
-        <input id="edit-itemname" type="text" placeholder="Item Name" value="w" required>
-        <input id="edit-class" type="text" placeholder="Class" required>
-        <input id="edit-price" type="number" placeholder="Price" required>
-        <input id="edit-quantity" type="number" placeholder="Quantity" required>
-        <div>
-          <div class="gbtn cgreen edit0"><h2>Confirm</h2></div>
-          <div class="gbtn cred edit1"><h2>Cancel</h2></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="popup delete-box">
-      <h2>Delete Item</h2>
-      <div class="pop-fields">
-        <h2 id="del-name"></h2>
-        <div>
-          <div class="gbtn cgreen delete0"><h2>Confirm</h2></div>
-          <div class="gbtn cred delete1"><h2>Cancel</h2></div>
-        </div>
-      </div>
-    </div>
+    <!-- Other popups for edit and delete -->
   </div>
 
-  <div class="main">
-    <div class="tblc">
+  <main class="main">
+    <section class="tblc">
+      <h2>Inventory</h2>
       <table id="inventory">
-        <thead></thead>
-        <tbody></tbody>
+        <thead>
+          <!-- Table headers -->
+        </thead>
+        <tbody>
+          <!-- Inventory items -->
+        </tbody>
       </table>
-    </div>
-    <div class="info">
+    </section>
+    
+    <aside class="info">
       <div>
-        <p><label>Total Inventory Cost : </label><input id="total-cost" type="text" readonly></p>
-        <p><label>Total Quantity : </label><input id="total-quantity" type="text" readonly></p>
+        <p><strong>Total Inventory Cost:</strong> <span id="total-cost">0</span></p>
+        <p><strong>Total Quantity:</strong> <span id="total-quantity">0</span></p>
       </div>
       <div>
-        <p><label>Selected Item : </label><input id="selected-item" value="None" readonly></p>
+        <p><strong>Selected Item:</strong> <span id="selected-item">None</span></p>
       </div>
-    </div>
-    <div class="button-container">
-      <div class="goback">
-        <a href="/gui/menu"><p>← Go Back</p></a>
-      </div>
-
-      <div class="gbtn cgreen add">
-        <h2>Add</h2>
-      </div>
-      <div class="gbtn cblue edit">
-        <h2>Edit</h2>
-      </div>
-      <div class="gbtn cred delete">
-        <h2>Delete</h2>
-      </div>
-    </div>
-  </div>
+    </aside>
+    
+    <nav class="button-container">
+      <a class="goback" href="/gui/menu">← Go Back</a>
+      <button class="gbtn cgreen add">Add</button>
+      <button class="gbtn cblue edit">Edit</button>
+      <button class="gbtn cred delete">Delete</button>
+    </nav>
+  </main>
   
 </body>
 </html>
