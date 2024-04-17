@@ -12,12 +12,23 @@
   <link rel="stylesheet" href="../css/gui-button.css">
   <script type="module" src="../js/transaction.js" defer></script>
   <title>David Stickers</title>
+  <style>
+    .main {
+      display: flex;
+      flex-direction: row-reverse; /* Reverse the order of the children */
+      justify-content: space-between; /* Space out the children */
+    }
+    .tblc, .transaction, .buy-table {
+      flex: 1; /* Allow each section to take equal space */
+    }
+  </style>
 </head>
 <body>
   <main class="main">
-    <section class="invtbl tblc">
-      <h2>Available Products</h2>
-      <table id="inventory">
+    <!-- Reversed order of sections -->
+    <section class="buy-table tblc">
+      <h2>Products to be Sold</h2>
+      <table id="chosen">
         <thead></thead>
         <tbody></tbody>
       </table>
@@ -31,9 +42,9 @@
       <!-- Transaction panels go here -->
     </nav>
 
-    <section class="buy-table tblc">
-      <h2>Products to be Sold</h2>
-      <table id="chosen">
+    <section class="invtbl tblc">
+      <h2>Available Products</h2>
+      <table id="inventory">
         <thead></thead>
         <tbody></tbody>
       </table>
