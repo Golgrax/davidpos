@@ -15,27 +15,33 @@
 </head>
 <body>
 
-  <div class="options">
-    <div class="dates">
-      <div>
-        <input id="start" type="date">
-      </div>
-      <div>
-        <input id="end" type="date">
-      </div>
-    </div>
+  <header class="options">
+    <h1 class="visually-hidden">David Stickers Visual Data</h1>
+    <section class="dates">
+      <label for="start">Start Date:</label>
+      <input id="start" type="date" aria-label="Start Date">
+      
+      <label for="end">End Date:</label>
+      <input id="end" type="date" aria-label="End Date">
+    </section>
 
-    <div class="goback">
-      <a href="/gui/menu"><p>&#8592 Go Back</p></a>
-    </div>
+    <nav class="navigation">
+      <ul>
+        <li>
+          <a href="/gui/menu" class="goback">← Go Back</a>
+        </li>
+      </ul>
+    </nav>
 
-    <button class="gbtn cgreen gn">check data</button>
+    <button class="gbtn cgreen gn">Check Data</button>
+  </header>
 
-  </div>
-
-  <div class="report-container">
-    <div class="reports"></div>
-  </div>
+  <main class="report-container">
+    <section class="reports" aria-labelledby="report-heading">
+      <h2 id="report-heading" class="visually-hidden">Reports</h2>
+      <!-- Report content will be dynamically inserted here -->
+    </section>
+  </main>
 
 </body>
 </html>
