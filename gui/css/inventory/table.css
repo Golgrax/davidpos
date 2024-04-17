@@ -1,48 +1,45 @@
 .tblc {
-  border: thin rgb(99, 49, 75) solid;
-
-  background-color: rgb(241, 241, 241);
+  border: thin solid #63314b; /* Changed to hex color for consistency */
+  background-color: #f1f1f1; /* Light grey background for the container */
   overflow: auto;
-
-  border-radius: 0.7em 0.7em 0.7em 0.7em;
+  border-radius: 0.7em; /* Simplified the border-radius property */
 }
 
-.tblc > table{
+.tblc > table {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
+  background-color: #ffffff; /* Ensured the table background is white */
 }
 
-.tblc > table > tbody tr:nth-child(2n){
-  background-color: rgb(167, 252, 156);
-  font-weight: thin;
+.tblc > table > tbody tr:nth-child(2n) {
+  background-color: #a7fc9c; /* Light green for even rows */
+  font-weight: normal; /* Changed from thin to normal for better readability */
 }
 
-.tblc > table > thead > th{
+.tblc > table > thead > th {
   position: sticky;
   top: 0;
-
-  background: rgb(228, 28, 138);
-  color: white;
+  background: #e41c8a; /* Bright pink for the header */
+  color: #ffffff; /* Text color for the header */
 }
 
-.tblc > table > thead > th, .tblc > table > tbody > tr{
+.tblc > table > thead > th, .tblc > table > tbody > tr {
   text-align: center;
   height: 1.7em;
 }
 
-.tblc > table > tbody > tr{
-  transition-delay: 5s;
+.tblc > table > tbody > tr {
+  transition-delay: 0s; /* Removed the 5s delay for a quicker transition */
   transition: 0.2s ease;
 }
 
 .tblc > table > tbody > tr:hover,
 .tblc > table > tbody > tr:active,
-.tblc > table > tbody > tr:focus{
-  background-color: rgb(23, 196, 196) !important;
-  color: white;
+.tblc > table > tbody > tr:focus {
+  background-color: #17c4c4 !important; /* Bright teal for hover, active, focus states */
+  color: #ffffff; /* White text for better contrast on hover, active, focus states */
 }
 
-.tblc > table > tbody > tr{
-  cursor: default;
+.tblc > table > tbody > tr {
+  cursor: pointer; /* Changed from default to pointer to indicate clickable rows */
 }
