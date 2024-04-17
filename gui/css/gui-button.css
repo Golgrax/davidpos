@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
+  text-align: left; /* Align text to the left */
 
   border-radius: 0.5em;
   
@@ -27,19 +27,9 @@
 
 /* button colors and border */
 
-.cblue {
+.cblue, .cred, .cgreen {
   background-image: linear-gradient(45deg, #6ba8e5, #4178be);
   border: 0.1em solid #34588b; /* Thinner border for a sleek look */
-}
-
-.cred {
-  background-image: linear-gradient(45deg, #e57373, #c2185b);
-  border: 0.1em solid #ad1457; /* Thinner border for a sleek look */
-}
-
-.cgreen {
-  background-image: linear-gradient(45deg, #81c784, #388e3c);
-  border: 0.1em solid #2e7d32; /* Thinner border for a sleek look */
 }
 
 .goback {
@@ -47,7 +37,7 @@
   border: none; /* Removed border for a cleaner look */
   border-radius: 0.5em; /* Consistent border-radius with other buttons */
   padding: 1em; /* Uniform padding with other buttons */
-  text-align: center;
+  text-align: left; /* Align text to the left */
 }
 
 .goback:hover {
